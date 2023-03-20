@@ -6,8 +6,7 @@ on:
       - 'main'
 
 jobs:
-
-unit-test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +20,7 @@ unit-test:
       - name: Run pytest
         run: |
           pytest
-          
+
   docker:
     runs-on: ubuntu-latest
     steps:
