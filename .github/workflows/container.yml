@@ -19,7 +19,7 @@ jobs:
           pip install -r requirments.txt
       - name: Run pytest
         run: |
-          pytest
+          pytest/home/fahad/.local/bin/pytest
 
   docker:
     runs-on: ubuntu-latest
