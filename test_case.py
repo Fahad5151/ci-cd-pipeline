@@ -1,9 +1,9 @@
-import requests;
+from app import app
 
-url = "http://127.0.0.1:5000/"
+url = "/"
 
 def test_root_url():
-    response = requests.get(url)
+    response = app.test_client.get(url)
     assert response.status_code == 200
     assert "Hello World!" in response.text
 
