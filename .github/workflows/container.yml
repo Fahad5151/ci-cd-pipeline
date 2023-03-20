@@ -6,7 +6,6 @@ on:
       - 'main'
 
 jobs:
-
 unit-test:
     runs-on: ubuntu-latest
     steps:
@@ -21,6 +20,8 @@ unit-test:
       - name: Run pytest
         run: |
           pytest
+
+
 
   docker:
     runs-on: ubuntu-latest
